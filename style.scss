@@ -1,5 +1,5 @@
 body{
-  background: #fff;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,15 +8,38 @@ body{
 .box{
   height: 200px;
   width: 200px;
-  background: conic-gradient(transparent, transparent, red, red, transparent, transparent, red, red, transparent);
+  // background: conic-gradient(transparent, transparent, red, red, transparent, transparent, red, red, transparent);
+  // background: conic-gradient(red, yellow, blue, pink, tomato, green, purple, red);
+  // background: conic-gradient(from 0deg, #ff6ec4, #4ade80, #facc15, #f97316, #ec4899, #3b82f6, #ff6ec4);
   border-radius: 50%;
   animation: rotate 3s linear infinite;
   display: flex;
   align-items: center;
   justify-content: center;
+  // box-shadow: 0 0 20px #fff;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: conic-gradient(
+        from 0deg,
+      red,
+      #4ade80,
+      #facc15,
+      #f97316,
+      #ec4899,
+      #3b82f6,
+      red);
+    filter: blur(10px);
+    z-index: -1;
+    border-radius: 50%;
+  }
   .inner{
-    height: 190px;
-    width: 190px;
+    height: 197px;
+    width: 197px;
     background: #000;
     border-radius: 50%;
     display: flex;
@@ -25,7 +48,6 @@ body{
     animation: rvcRotate 3s linear infinite;
     img{
       width:80%;
-
     }
   }
 }
