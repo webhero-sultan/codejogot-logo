@@ -10,13 +10,14 @@ body{
   width: 200px;
   // background: conic-gradient(transparent, transparent, red, red, transparent, transparent, red, red, transparent);
   // background: conic-gradient(red, yellow, blue, pink, tomato, green, purple, red);
-  // background: conic-gradient(from 0deg, #ff6ec4, #4ade80, #facc15, #f97316, #ec4899, #3b82f6, #ff6ec4);
+  background: conic-gradient(from 0deg, #ff6ec4, #4ade80, #facc15, #f97316, #ec4899, #3b82f6, #ff6ec4);
+  // background: conic-gradient(from 0deg, red, green, blue, red, green, blue, red);
+  background: conic-gradient(from 0deg, red, transparent);
   border-radius: 50%;
   animation: rotate 3s linear infinite;
   display: flex;
   align-items: center;
   justify-content: center;
-  // box-shadow: 0 0 20px #fff;
   &::before {
     content: '';
     position: absolute;
@@ -24,22 +25,16 @@ body{
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: conic-gradient(
-        from 0deg,
-      red,
-      #4ade80,
-      #facc15,
-      #f97316,
-      #ec4899,
-      #3b82f6,
-      red);
+    background: conic-gradient(from 0deg,#ae2020,#4ade80,#facc15,#f97316,#ec4899,#3b82f6,#ae2020,#ae2020);
+    // background: conic-gradient(from 0deg, red, green, blue, red, green, blue, red);
+    background: conic-gradient(from 0deg, red, transparent);
     filter: blur(10px);
     z-index: -1;
     border-radius: 50%;
   }
   .inner{
-    height: 197px;
-    width: 197px;
+    height: 190px;
+    width: 190px;
     background: #000;
     border-radius: 50%;
     display: flex;
