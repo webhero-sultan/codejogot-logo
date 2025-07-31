@@ -20,10 +20,10 @@ body {
 .box::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
   background: conic-gradient(from 0deg, #ae2020, #4ade80, #facc15, #f97316, #ec4899, #3b82f6, #ae2020, #ae2020);
   background: conic-gradient(from 0deg, red, transparent);
   filter: blur(10px);
@@ -53,4 +53,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}/*# sourceMappingURL=style.css.map */
+}
